@@ -10,7 +10,7 @@ import net.thucydides.core.annotations.Steps;
 public class Se16GUIStepDef {
 	
 	@Steps
-	STable SAPTable;
+	STable SAPTable; 
 	
 	
 	@Given("^Se16 transaction \"(.*)\" code call$")
