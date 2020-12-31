@@ -4,8 +4,12 @@ import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 import org.junit.AfterClass;
+import org.junit.BeforeClass;
+
 import io.appium.java_client.windows.WindowsDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.io.File;
 import java.net.URL;
 
 import com.jacob.com.ComThread;
@@ -28,6 +32,14 @@ public class CucumberTestSuite {
 	public static Dispatch ROTEntry;
 	public static Variant ScriptEngine;
 	
+	@BeforeClass
+	public static void startup() {
+		try {
+			Runtime.getRuntime().exec("C:\\Program Files (x86)\\Windows Application Driver\\WinAppDriver.exe", null, new File("C:\\Program Files (x86)\\Windows Application Driver\\"));
+		}catch(Exception ex) {
+			System.out.println(ex.getMessage());
+		}
+	}
 	
 	@AfterClass
 	@SuppressWarnings("rawtypes")
