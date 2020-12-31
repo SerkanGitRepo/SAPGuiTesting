@@ -35,6 +35,7 @@ public class WorkerSTable {
 		}
 		catch(Exception ex) {
 			System.out.println(ex.getMessage());
+			System.out.println(ex.getMessage());
 			ComThread.Release(); 
 		}
 	}
