@@ -34,8 +34,12 @@ public class CucumberTestSuite {
 	
 	@BeforeClass
 	public static void startup() {
-		try {
-			Runtime.getRuntime().exec("C:\\Program Files (x86)\\Windows Application Driver\\WinAppDriver.exe", null, new File("C:\\Program Files (x86)\\Windows Application Driver\\"));
+		try { 
+
+			Runtime.getRuntime().exec("rundll32 SHELL32.DLL,ShellExec_RunDLL C:\\Program Files (x86)\\Windows Application Driver\\WinAppDriver.exe");
+			Thread.sleep(1000);
+			
+			System.out.println("Çalıştı mı?");
 		}catch(Exception ex) {
 			System.out.println(ex.getMessage());
 		}
