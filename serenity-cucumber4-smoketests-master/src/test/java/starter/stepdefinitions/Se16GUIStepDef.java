@@ -1,8 +1,6 @@
 package starter.stepdefinitions;
 
 import starter.UIs.STable;
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.After;
 import io.cucumber.java.en.*;
 import net.thucydides.core.annotations.Steps;
 
@@ -61,17 +59,7 @@ public class Se16GUIStepDef {
 		}
 
 	}
-//	@After(value=@SAPGUI)
-//	public void afterScenario() {
-//		try {
-//			SAPTable=new STable();
-//			SAPTable.CikisKontrol();
-//		}catch(Exception ex)
-//		{
-//			System.out.println(ex.getMessage());
-//			System.out.println("Given");
-//		}
-//	}
+
 	
 }
 

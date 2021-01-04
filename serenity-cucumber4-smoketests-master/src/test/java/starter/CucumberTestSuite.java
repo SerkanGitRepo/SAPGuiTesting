@@ -9,7 +9,6 @@ import org.junit.BeforeClass;
 import io.appium.java_client.windows.WindowsDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import java.io.File;
 import java.net.URL;
 
 import com.jacob.com.ComThread;
